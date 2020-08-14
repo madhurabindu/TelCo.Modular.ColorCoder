@@ -40,9 +40,9 @@ This is similar to having different flavours of parsing a string to int as [in t
 
 ### Reference
 If interested, please go through the below links on try catch
-- [Design guideline on throwing Exception ] (https://docs.microsoft.com/en-us/archive/blogs/kcwalina/design-guidelines-update-exception-throwing) 
-- [Cost of throwing exception] https://docs.microsoft.com/en-us/archive/blogs/ricom/the-true-cost-of-net-exceptions-solution
-- [Try-catch cost comparison] (https://buildplease.com/pages/slow-exceptions/#:~:text=Costs%20of%20Throwing%20Exceptions&text=The%20first%20cost%20comes%20from,from%20actually%20throwing%20the%20exception)
+- [Design guideline on throwing Exception](https://docs.microsoft.com/en-us/archive/blogs/kcwalina/design-guidelines-update-exception-throwing) 
+- [Cost of throwing exception](https://docs.microsoft.com/en-us/archive/blogs/ricom/the-true-cost-of-net-exceptions-solution)
+- [Try-catch cost comparison](https://buildplease.com/pages/slow-exceptions/#:~:text=Costs%20of%20Throwing%20Exceptions&text=The%20first%20cost%20comes%20from,from%20actually%20throwing%20the%20exception)
 
 
 
