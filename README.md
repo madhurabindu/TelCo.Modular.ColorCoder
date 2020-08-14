@@ -9,10 +9,10 @@ There are 25 pairs of colors.
 
 ### Exercise Details:
 During a desing and code review session, it was pointed out that throwing of exception is an expensive operation. 
-Hystorically exception ensures that code is forced to handle the situation whereas return codes can be ignored.
-Both these methods need to be used in the right context.
-So the suggestion was to not remove the throwing exception, but to follow a good design practice of providing a 'Try' operation
-similar to haveing different flavours of parsing a string to int : refer https://www.c-sharpcorner.com/article/uses-of-int-parse-convert-toint-and-int-tryparse/
+Hystorically, Exception  ensures that code is forced to handle the situation whereas return codes can be ignored by the caller function. 
+However the guidelines for when to use what is a long discussion topic and hence both these methods need to be used in the right context.
+So the suggestion was to not remove throwing exception, but to follow a good design practice of providing a 'Try' equivalent of the operations.
+This is similar to having different flavours of parsing a string to int as [in this blog post] (https://www.c-sharpcorner.com/article/uses-of-int-parse-convert-toint-and-int-tryparse/)
 
 ### Source code details:
  The implementation of this feature provides the above mentioned mapping between the pair number and the color pair. 
@@ -37,4 +37,12 @@ similar to haveing different flavours of parsing a string to int : refer https:/
 | Method | GetColorFromPairNumber | Given pair number return the 2 colors mapping to the number |
 | Method | GetPairNumberFromColor | Given the colors, return the pair number corresponding to them |
 | Method | ToString | Returns all the colours in displayable format |
+
+### Reference
+If interested, please go through the below links on try catch
+- [Design guideline on throwing Exception ] (https://docs.microsoft.com/en-us/archive/blogs/kcwalina/design-guidelines-update-exception-throwing) 
+- [Cost of throwing exception] https://docs.microsoft.com/en-us/archive/blogs/ricom/the-true-cost-of-net-exceptions-solution
+- [Try-catch cost comparison] (https://buildplease.com/pages/slow-exceptions/#:~:text=Costs%20of%20Throwing%20Exceptions&text=The%20first%20cost%20comes%20from,from%20actually%20throwing%20the%20exception)
+
+
 
