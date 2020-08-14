@@ -12,7 +12,7 @@ During a desing and code review session, it was pointed out that throwing of exc
 Hystorically, Exception  ensures that code is forced to handle the situation whereas return codes can be ignored by the caller function. 
 However the guidelines for when to use what is a long discussion topic and hence both these methods need to be used in the right context.
 So the suggestion was to not remove throwing exception, but to follow a good design practice of providing a 'Try' equivalent of the operations.
-This is similar to having different flavours of parsing a string to int as [in this blog post] (https://www.c-sharpcorner.com/article/uses-of-int-parse-convert-toint-and-int-tryparse/)
+This is similar to having different flavours of parsing a string to int as explained [in this blog post] (https://www.c-sharpcorner.com/article/uses-of-int-parse-convert-toint-and-int-tryparse/)
 
 ### Source code details:
  The implementation of this feature provides the above mentioned mapping between the pair number and the color pair. 
