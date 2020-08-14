@@ -42,8 +42,8 @@ This is similar to having different flavours of parsing a string to int as expla
 | Entity | Name | Description |
 | ------ | ------ | ------ |
 | Class | ColorPair | Data type for encapsulating the major and minor color |
-| Class | ColorReader.cs | Provides the functionality to initialize the color codes |
-| Class | StringFormatter.cs | Provides helper functions for formatting the coded colors into display format |
+| Class | ColorReader | Provides the functionality to initialize the color codes |
+| Class | StringFormatter | Provides helper functions for formatting the coded colors into display format |
 | Class | Program | Provides the main method to test the functionality |
 
  ##### Test Class Details:
