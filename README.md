@@ -25,18 +25,34 @@ This is similar to having different flavours of parsing a string to int as expla
 | ColorReader.cs | Contains the ColorReader helper class implementation |
 | StringFormatter.cs | Contains the StringFormater helper class implementation |
 | Program.cs | Entry point of the program, main method to test the functionality |
+| Test.cs | Contains test related code |
+| TestColor.cs | Contains test code for testing getcolors from pair |
+| TestPair.cs | Contains test code for testing  get pair from colors |
+
 
  ##### Class and Method Details:
 | Entity | Name | Description |
 | ------ | ------ | ------ |
-| Class | Program | Provides the main method to test the functionality |
 | Class | ColorCoder.cs | Provides the ColorPair coder feature functionality |
-| Class | ColorReader.cs | Provides the functionality to initialize the color codes |
-| Class | StringFormatter.cs | Provides helper functions for formatting the coded colors into display format |
-| Class | ColorPair | Data type for encapsulating the major and minor color |
 | Method | GetColorFromPairNumber | Given pair number return the 2 colors mapping to the number |
 | Method | GetPairNumberFromColor | Given the colors, return the pair number corresponding to them |
 | Method | ToString | Returns all the colours in displayable format |
+
+ ##### Class Details:
+| Entity | Name | Description |
+| ------ | ------ | ------ |
+| Class | ColorPair | Data type for encapsulating the major and minor color |
+| Class | ColorReader.cs | Provides the functionality to initialize the color codes |
+| Class | StringFormatter.cs | Provides helper functions for formatting the coded colors into display format |
+| Class | Program | Provides the main method to test the functionality |
+
+ ##### Test Class Details:
+| Entity | Name | Description |
+| ------ | ------ | ------ |
+| Class | Test | TestClass to encapsulate all the test related code |
+| Class | TestColor | TestClass to encapsulate all the test related to Getting colors |
+| Class | TestPair | TestClass to encapsulate all the test related to Getting pair number |
+
 
 ### Reference
 If interested, please go through the below links on try catch
