@@ -41,8 +41,8 @@ namespace TelCo.Modular.ColorCodeProvider
             // Construct the return val from the values
             ColorPair pair = new ColorPair()
             {
-                MajorColor = colorPairs[pairNumber].MajorColor,
-                MinorColor = colorPairs[pairNumber].MinorColor
+                MajorColor = colorPairs[pairNumber-1].MajorColor,
+                MinorColor = colorPairs[pairNumber-1].MinorColor
             };
 
             // return the value
@@ -68,14 +68,14 @@ namespace TelCo.Modular.ColorCodeProvider
             }
 
             // Compute pair number and Return  
-            // (Note: +1 in compute is because pair number is 1 based, not zero)
+            // (Note: +1 is because pair number is 1 based, not zero based index)
             return (pairIndex + 1);
         }
         /// <summary>
         /// Format the color code table and return the formatted string
         /// </summary>
         /// <returns></returns>
-        internal static string StringFormatColorCodeTable()
+        public override string ToString()
         {
             return StringFormatter.Format(colorPairs);
         }

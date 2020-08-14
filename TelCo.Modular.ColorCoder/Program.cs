@@ -1,34 +1,27 @@
 ﻿using System;
-using System.Drawing;
+using System.Collections.Generic;
+using System.Text;
 
 namespace TelCo.Modular.ColorCodeProvider
 {
-    /// <summary>
-    /// Default Program class
-    /// </summary>
     class Program
     {
         /// <summary>
         /// Test code for the class
         /// </summary>
         /// <param name="args"></param>
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            int pairNumber = 4;
-            ColorPair testPair1 = ColorCoder.GetColorFromPairNumber(pairNumber);
-            Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
+            Test p = new Test();
+            // Print the table
+            p.PrintColorTable();
 
-            pairNumber = 23;
-            testPair1 = ColorCoder.GetColorFromPairNumber(pairNumber);
-            Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
+            // Test the GetColor function 
+            p.TestGetColor();
 
-            ColorPair testPair2 = new ColorPair() { MajorColor = Color.Yellow,MinorColor = Color.Green };
-            pairNumber = ColorCoder.GetPairNumberFromColor(testPair2);
-            Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
+            // Test the GetColor function 
+            p.TestGetPair();
 
-            testPair2 = new ColorPair() { MajorColor = Color.White, MinorColor = Color.Brown };
-            pairNumber = ColorCoder.GetPairNumberFromColor(testPair2);
-            Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
         }
     }
 }
