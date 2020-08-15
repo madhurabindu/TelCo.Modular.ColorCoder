@@ -17,6 +17,22 @@ namespace TelCo.Modular.ColorCodeProvider
         /// </summary>
         internal Color MinorColor { get; set; }
         /// <summary>
+        /// default ctor
+        /// </summary>
+        public ColorPair()
+        {
+
+        }
+        /// <summary>
+        /// Copy ctor
+        /// </summary>
+        /// <param name="pair"></param>
+        public ColorPair(ColorPair pair)
+        {
+            MajorColor = pair.MajorColor;
+            MinorColor = pair.MinorColor;
+        }
+        /// <summary>
         /// String represnetation of color pair
         /// </summary>
         /// <returns></returns>

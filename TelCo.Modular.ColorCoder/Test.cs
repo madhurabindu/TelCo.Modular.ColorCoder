@@ -15,7 +15,7 @@ namespace TelCo.Modular.ColorCodeProvider
         /// </summary>
         internal void PrintColorTable()
         {
-            ColorCoder coder = new ColorCoder();
+            ColorCodeRegistry coder = new ColorCodeRegistry();
             Console.WriteLine(coder.ToString());
         }
         /// <summary>

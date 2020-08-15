@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="TelCo.Modular.ColorCodeProvider.csproj">
+      <Assembly Name="TelCo.Modular.ColorCodeProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="79" />
+          <Metric Name="CyclomaticComplexity" Value="38" />
+          <Metric Name="ClassCoupling" Value="15" />
+          <Metric Name="DepthOfInheritance" Value="1" />
+          <Metric Name="LinesOfCode" Value="85" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="TelCo.Modular.ColorCodeProvider">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="79" />
+              <Metric Name="CyclomaticComplexity" Value="38" />
+              <Metric Name="ClassCoupling" Value="15" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="LinesOfCode" Value="85" />
+            </Metrics>
+            <Types>
+              <NamedType Name="ColorCodeRegistry">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="81" />
+                  <Metric Name="CyclomaticComplexity" Value="10" />
+                  <Metric Name="ClassCoupling" Value="8" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="14" />
+                </Metrics>
+                <Members>
+                  <Method Name="ColorCodeRegistry.ColorCodeRegistry()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorCodeRegistry.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="95" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="ColorPair ColorCodeRegistry.GetColorFromPairNumber(int pairNumber)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorCodeRegistry.cs" Line="32">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="LinesOfCode" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int ColorCodeRegistry.GetPairNumberFromColor(ColorPair pair)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorCodeRegistry.cs" Line="52">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="LinesOfCode" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string ColorCodeRegistry.ToString()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorCodeRegistry.cs" Line="70">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="95" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool ColorCodeRegistry.IsValidPairNumber(int pairNumber)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorCodeRegistry.cs" Line="78">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="89" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int ColorCodeRegistry.FindPairNumber(ColorPair pair)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorCodeRegistry.cs" Line="87">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="LinesOfCode" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="ColorCodeRegistry.ColorCodeRegistry()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorCodeRegistry.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="ColorPair">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="93" />
+                  <Metric Name="CyclomaticComplexity" Value="7" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="3" />
+                </Metrics>
+                <Members>
+                  <Method Name="Color ColorPair.MajorColor.get" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorPair.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void ColorPair.MajorColor.set" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorPair.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Color ColorPair.MinorColor.get" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorPair.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void ColorPair.MinorColor.set" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorPair.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="ColorPair.ColorPair()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorPair.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="ColorPair.ColorPair(ColorPair pair)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorPair.cs" Line="30">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="84" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string ColorPair.ToString()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorPair.cs" Line="39">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="ColorReader">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="58" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="12" />
+                </Metrics>
+                <Members>
+                  <Method Name="ColorPair[] ColorReader.InitializeColors()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\ColorReader.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="58" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="LinesOfCode" Value="12" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Program">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="88" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="4" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Program.Main(string[] args)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\Program.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Program.Program()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\Program.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="StringFormatter">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="74" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="11" />
+                </Metrics>
+                <Members>
+                  <Method Name="string StringFormatter.Format(ColorPair[] colorPairs)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\StringFormatter.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="61" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="LinesOfCode" Value="9" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string StringFormatter.CenterAlign(string value, int width)" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\StringFormatter.cs" Line="43">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="StringFormatter.StringFormatter()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\StringFormatter.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Test">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="92" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="6" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Test.PrintColorTable()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\Test.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="86" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="LinesOfCode" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Test.TestGetColor()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\Test.cs" Line="24">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Test.TestGetPair()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\Test.cs" Line="32">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="LinesOfCode" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Test.Test()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\Test.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="TestColor">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="73" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="5" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="19" />
+                </Metrics>
+                <Members>
+                  <Method Name="void TestColor.TestGetColor()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestColor.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void TestColor.PositiveTestGetColor()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestColor.cs" Line="25">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="LinesOfCode" Value="10" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void TestColor.NegativeTestGetColor()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestColor.cs" Line="45">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="LinesOfCode" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="TestColor.TestColor()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestColor.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="TestPair">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="73" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="5" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="LinesOfCode" Value="16" />
+                </Metrics>
+                <Members>
+                  <Method Name="void TestPair.TestGetPair()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestPair.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void TestPair.PositiveTestGetPair()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestPair.cs" Line="23">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="LinesOfCode" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void TestPair.NegativeTestGetPair()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestPair.cs" Line="41">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="LinesOfCode" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="TestPair.TestPair()" File="C:\Users\madhu\source\repos\Sample2\TelCo.Modular.ColorCoder\TestPair.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="LinesOfCode" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

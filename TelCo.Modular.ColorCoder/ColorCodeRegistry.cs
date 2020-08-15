@@ -9,7 +9,7 @@ namespace TelCo.Modular.ColorCodeProvider
     /// This class provides the color coding and 
     /// mapping of pair number to color and color to pair number.
     /// </summary>
-    internal class ColorCoder
+    internal class ColorCodeRegistry
     {
         /// <summary>
         /// Array of pair of colors
@@ -19,7 +19,7 @@ namespace TelCo.Modular.ColorCodeProvider
         /// <summary>
         /// Static constructor required to initialize static variable
         /// </summary>
-        static ColorCoder()
+        static ColorCodeRegistry()
         {
             colorPairs = ColorReader.InitializeColors();
         }
@@ -32,18 +32,14 @@ namespace TelCo.Modular.ColorCodeProvider
         internal static ColorPair GetColorFromPairNumber(int pairNumber)
         {
             // The function supports only 1 based index. Pair numbers valid are from 1 to 25
-            if (pairNumber < 1 || pairNumber > colorPairs.Length)
+            if (!IsValidPairNumber(pairNumber))
             {
                 throw new ArgumentOutOfRangeException(
                     string.Format("Argument PairNumber:{0} is outside the allowed range", pairNumber));
             }
 
-            // Construct the return val from the values
-            ColorPair pair = new ColorPair()
-            {
-                MajorColor = colorPairs[pairNumber-1].MajorColor,
-                MinorColor = colorPairs[pairNumber-1].MinorColor
-            };
+            // Construct the return val from the values, note pair number is 1 based
+            ColorPair pair = new ColorPair(colorPairs[pairNumber - 1]);
 
             // return the value
             return pair;
@@ -56,9 +52,7 @@ namespace TelCo.Modular.ColorCodeProvider
         internal static int GetPairNumberFromColor(ColorPair pair)
         {
             // Find the 0 based index in color pair array 
-            int pairIndex = Array.FindIndex(colorPairs, 
-                item => ((item.MajorColor == pair.MajorColor) && 
-            (item.MinorColor == pair.MinorColor)));
+            int pairIndex = FindPairNumber(pair);
 
             // If colors can not be found throw an exception
             if (pairIndex == -1 )
@@ -67,9 +61,7 @@ namespace TelCo.Modular.ColorCodeProvider
                     string.Format("Unknown Colors: {0}", pair.ToString()));
             }
 
-            // Compute pair number and Return  
-            // (Note: +1 is because pair number is 1 based, not zero based index)
-            return (pairIndex + 1);
+            return (pairIndex);
         }
         /// <summary>
         /// Format the color code table and return the formatted string
@@ -78,6 +70,29 @@ namespace TelCo.Modular.ColorCodeProvider
         public override string ToString()
         {
             return StringFormatter.Format(colorPairs);
+        }
+        /// <summary>
+        /// returns if a given pair number is valid
+        /// </summary>
+        /// <returns></returns>
+        private static bool IsValidPairNumber(int pairNumber)
+        {
+            return (pairNumber > 0 || pairNumber <= colorPairs.Length);
+        }
+        /// <summary>
+        /// Find the index of the pair in 
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns></returns>
+        private static int FindPairNumber(ColorPair pair)
+        {
+            // Find the 0 based index in color pair array 
+            int pairIndex = Array.FindIndex(colorPairs, item => ((item.MajorColor == pair.MajorColor) &&
+            (item.MinorColor == pair.MinorColor)));
+
+            // Compute pair number and Return  
+            // (Note: +1 is because pair number is 1 based, not zero based index)
+            return pairIndex +1;
         }
     }
 }

@@ -26,14 +26,14 @@ namespace TelCo.Modular.ColorCodeProvider
         {
             // Positive case 1
             int pairNumber = 5;
-            ColorPair testPair1 = ColorCoder.GetColorFromPairNumber(pairNumber);
+            ColorPair testPair1 = ColorCodeRegistry.GetColorFromPairNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
             Debug.Assert(testPair1.MajorColor == Color.White);
             Debug.Assert(testPair1.MinorColor == Color.SlateGray);
 
             // Positive case 2
             pairNumber = 24;
-            testPair1 = ColorCoder.GetColorFromPairNumber(pairNumber);
+            testPair1 = ColorCodeRegistry.GetColorFromPairNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
             Debug.Assert(testPair1.MajorColor == Color.Violet);
             Debug.Assert(testPair1.MinorColor == Color.Brown);
@@ -49,7 +49,7 @@ namespace TelCo.Modular.ColorCodeProvider
             bool errorConditionHandled = false;
             try
             {
-                ColorPair testPair1 = ColorCoder.GetColorFromPairNumber(pairNumber);
+                ColorPair testPair1 = ColorCodeRegistry.GetColorFromPairNumber(pairNumber);
                 Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
             }
             catch (Exception ex)

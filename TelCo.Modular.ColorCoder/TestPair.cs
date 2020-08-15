@@ -24,13 +24,13 @@ namespace TelCo.Modular.ColorCodeProvider
         {
             // Positive case 1
             ColorPair testPair2 = new ColorPair() { MajorColor = Color.Yellow, MinorColor = Color.Blue };
-            int pairNumber = ColorCoder.GetPairNumberFromColor(testPair2);
+            int pairNumber = ColorCodeRegistry.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 16);
 
             // Positive case 2
             testPair2 = new ColorPair() { MajorColor = Color.Red, MinorColor = Color.Green };
-            pairNumber = ColorCoder.GetPairNumberFromColor(testPair2);
+            pairNumber = ColorCodeRegistry.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
             Debug.Assert(pairNumber == 8);
         }
@@ -45,7 +45,7 @@ namespace TelCo.Modular.ColorCodeProvider
             try
             {
                 ColorPair testPair2 = new ColorPair() { MajorColor = Color.Red, MinorColor = Color.Maroon };
-                int pairNumber = ColorCoder.GetPairNumberFromColor(testPair2);
+                int pairNumber = ColorCodeRegistry.GetPairNumberFromColor(testPair2);
             }
             catch (Exception ex)
             {
