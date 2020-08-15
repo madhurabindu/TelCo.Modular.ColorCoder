@@ -52,7 +52,7 @@ namespace TelCo.Modular.ColorCodeProvider
                 ColorPair testPair1 = ColorCodeRegistry.GetColorFromPairNumber(pairNumber);
                 Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 errorConditionHandled = true;
             }
