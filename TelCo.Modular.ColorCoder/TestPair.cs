@@ -47,7 +47,7 @@ namespace TelCo.Modular.ColorCodeProvider
                 ColorPair testPair2 = new ColorPair() { MajorColor = Color.Red, MinorColor = Color.Maroon };
                 int pairNumber = ColorCodeRegistry.GetPairNumberFromColor(testPair2);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 errorConditionHandled = true;
             }
