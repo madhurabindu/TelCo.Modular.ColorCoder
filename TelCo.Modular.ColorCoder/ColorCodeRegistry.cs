@@ -92,7 +92,7 @@ namespace TelCo.Modular.ColorCodeProvider
 
             // Compute pair number and Return  
             // (Note: +1 is because pair number is 1 based, not zero based index)
-            return pairIndex +1;
+            return pairIndex == -1 ? -1 : pairIndex +1;
         }
     }
 }

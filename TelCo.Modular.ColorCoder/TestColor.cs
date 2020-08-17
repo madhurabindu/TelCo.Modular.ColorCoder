@@ -55,6 +55,7 @@ namespace TelCo.Modular.ColorCodeProvider
             catch (Exception)
             {
                 errorConditionHandled = true;
+                Console.WriteLine("Invalid Pair Number : {0}, Error Condition handled\n", pairNumber);
             }
             Debug.Assert(errorConditionHandled);
         }

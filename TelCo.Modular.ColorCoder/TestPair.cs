@@ -31,7 +31,7 @@ namespace TelCo.Modular.ColorCodeProvider
             // Positive case 2
             testPair2 = new ColorPair() { MajorColor = Color.Red, MinorColor = Color.Green };
             pairNumber = ColorCodeRegistry.GetPairNumberFromColor(testPair2);
-            Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
+            Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 8);
         }
 
@@ -42,14 +42,17 @@ namespace TelCo.Modular.ColorCodeProvider
         {
             // negative test case with wrong color as input to simulate error condition
             bool errorConditionHandled = false;
+            ColorPair testPair2 = new ColorPair() { MajorColor = Color.Red, MinorColor = Color.Maroon };
             try
             {
-                ColorPair testPair2 = new ColorPair() { MajorColor = Color.Red, MinorColor = Color.Maroon };
                 int pairNumber = ColorCodeRegistry.GetPairNumberFromColor(testPair2);
+                Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
+
             }
             catch (Exception)
             {
                 errorConditionHandled = true;
+                Console.WriteLine("Invalid Color : {0}, Error Condition handled\n", testPair2);
             }
             Debug.Assert(errorConditionHandled);
         }
